@@ -1,0 +1,67 @@
+@import 'variables';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'global';
+// === PARTIALS ===
+
+// === PAGE === //
+.page {
+  width: 100%;
+  height: 100vh;
+
+  background: #000 url('../images/bg.jpg') center no-repeat;
+  background-size: cover;
+}
+// === / PAGE === //
+
+// === HEADER === //
+.header {
+  padding: 1rem 0;
+  background-color: #2b7ded;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__brand {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #fff;
+  }
+
+  &__menu {
+    display: flex;
+  }
+
+  &__menu-link {
+    margin-left: 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    transition: color 0.2s linear;
+  }
+  &__menu-link:hover {
+    color: rgb(187, 229, 255);
+  }
+
+  &__menu-link.active {
+    position: relative;
+  }
+  &__menu-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+  }
+}
+// === / HEADER === //
+
+// === ADAPTIVE ===
+@import 'media';

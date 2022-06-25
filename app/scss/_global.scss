@@ -1,0 +1,32 @@
+html {
+  font-size: 15px;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  // display: flex;
+  // flex-direction: column;
+  // @extend %;
+  // color: $default;
+}
+
+// delete if not need fixed to bottom footer
+// .main {
+//   flex-grow: 1;
+// }
+
+// a {
+//   @extend %;
+//   font-size: px;
+//   line-height: px;
+//   color: $default;
+// }
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
