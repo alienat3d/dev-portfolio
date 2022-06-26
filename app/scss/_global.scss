@@ -30,3 +30,49 @@ body {
   margin: 0 auto;
   padding: 0 15px;
 }
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted $accent;
+  cursor: help;
+
+  &:hover .tooltiptext {
+    visibility: visible;
+  }
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  font-size: 1.1rem;
+}
+
+.tooltiptext {
+  position: absolute;
+  top: 8px;
+  right: -285px;
+  z-index: 1;
+  border-radius: 6px;
+  padding: 5px 0;
+  width: 280px;
+  color: $white;
+  text-align: center;
+  background-color: rgba($black, 0.5);
+  transition: $transition-fast;
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 12px 30px;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.1;
+  color: $white;
+  background-color: $accent;
+  transition: $transition-fast;
+
+  &:hover {
+    background-color: darken($accent, 5%);
+  }
+}
