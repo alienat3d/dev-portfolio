@@ -37,8 +37,12 @@ body {
   border-bottom: 1px dotted $accent;
   cursor: help;
 
-  &:hover .tooltiptext {
-    visibility: visible;
+  &:hover {
+    border-color: transparent;
+
+    .tooltiptext {
+      visibility: visible;
+    }
   }
 }
 

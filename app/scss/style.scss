@@ -105,5 +105,74 @@
 }
 // === / AUTHOR ===
 
+// === FOOTER ===
+.footer {
+  position: absolute;
+  bottom: 45px;
+  left: 0;
+  width: 100%;
+  // .footer__contacts-box
+  &__contacts-box {
+    position: relative;
+    font-size: 1rem;
+    font-weight: 500;
+    color: $white;
+  }
+  // .footer__email, .footer__phone
+  &__email,
+  &__phone {
+    position: relative;
+  }
+  &__email::before,
+  &__phone::before {
+    content: '';
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 3px;
+    left: 0;
+  }
+  &__email::after,
+  &__phone::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: $white;
+    transition: $transition-fast;
+  }
+  // .footer__email
+  &__email {
+    margin-right: 2rem;
+    padding-left: 24px;
+
+    &::before {
+      background-image: url('../images/icons/mail.svg');
+      width: 17px;
+      height: 14px;
+    }
+  }
+  // .footer__phone
+  &__phone {
+    padding-left: 19px;
+    &::before {
+      background-image: url('../images/icons/tel.svg');
+      width: 14px;
+      height: 14px;
+    }
+  }
+  // .footer__email:hover
+  &__email:hover.footer__email::after {
+    width: 100%;
+  }
+
+  // .footer__phone:hover
+  &__phone:hover.footer__phone::after {
+    width: 100%;
+  }
+}
+// === / FOOTER ===
+
 // === ADAPTIVE ===
 @import 'media';
