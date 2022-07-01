@@ -65,6 +65,10 @@ body {
   transition: $transition-fast;
 }
 
+.blue {
+  color: $accent;
+}
+
 .btn {
   display: inline-block;
   border-radius: 5px;
@@ -75,8 +79,13 @@ body {
   color: $white;
   background-color: $accent;
   transition: $transition-fast;
+  cursor: pointer;
 
   &:hover {
     background-color: darken($accent, 5%);
+  }
+
+  &--wide {
+    width: 100%;
   }
 }

@@ -69,8 +69,12 @@
 
 // === CONTENT === //
 .content {
-  width: 610px;
+  width: 626px;
   color: $white;
+  // .content__header
+  &__header {
+    margin-bottom: 35px;
+  }
   // .content__suptitle
   &__suptitle {
     font-weight: 300;
@@ -79,17 +83,9 @@
   }
   // .content__title
   &__title {
-    margin-bottom: 35px;
-    font-weight: 300;
-  }
-  &__title span {
     font-weight: 500;
     font-size: 2rem;
     line-height: 1.2;
-  }
-  &__title span + span {
-    color: $accent;
-    font-weight: 500;
   }
   // .content__text
   &__text {
@@ -106,6 +102,35 @@
   bottom: 0;
 }
 // === / AUTHOR ===
+
+// === FORM ===
+.form {
+  width: 100%;
+  max-width: 280px;
+  // .form__item
+  &__item {
+    margin-bottom: 20px;
+  }
+}
+
+.input,
+.textarea {
+  display: block;
+  border-radius: 5px;
+  padding: 12px 18px;
+  width: 100%;
+  font-size: 1rem;
+  background-color: rgba($white, 0.1);
+}
+.input::placeholder,
+.textarea::placeholder {
+  color: rgba($white, 0.7);
+}
+.textarea {
+  height: 100px;
+  resize: none;
+}
+// === / FORM ===
 
 // === FOOTER ===
 .footer {

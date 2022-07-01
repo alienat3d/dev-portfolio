@@ -40,27 +40,35 @@
       <!-- === CONTENT === -->
       <div class="container">
         <section class="content">
-          <h1 class="content__title">
-            Алексей <span>Цаплин</span>
-          </h1>
-          <p class="content__text">
-            Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Однажды послушавшись,
-            гор все маленькая за вопрос залетают коварных реторический вдали по всей составитель точках проектах они
-            свое единственное рукопись грустный пор текстов текста журчит коварный буквенных страна которой власти. Рот
-            семь лучше одна своего сих знаках заглавных агентство деревни свою, путь заманивший курсивных, оксмокс
-            повстречался речью, по всей большой всемогущая свой. Семантика жаренные, рекламных вопрос, лучше все они
-            буквенных, строчка страна предупреждал своего раз выйти.
-          </p>
-          <p class="content__text">
-            Агентство, скатился безорфографичный меня залетают
-            деревни она снова. Сбить за большой, языком то семантика своего на берегу коварных взгляд маленький страну
-            океана снова осталось она ведущими заманивший!
-          </p>
-          <a class="btn  content__btn" href="contact.html">
-            Контакты
-          </a>
+          <div class="content__header">
+            <h1 class="content__title">
+              Напишите мне <span class="blue">письмо</span>
+            </h1>
+            <p>
+              Заполните пожалуйста форму ниже, чтобы отправить мне электронное письмо:
+            </p>
+          </div>
+          <!-- === FORM === -->
+          <form class="form" action="/" method="post">
+            <div class="form__item">
+              <input class="input" type="text" placeholder="Имя">
+            </div>
+            <div class="form__item">
+              <input class="input" type="email" placeholder="Адрес электронной почты">
+            </div>
+            <div class="form__item">
+              <input class="input" type="tel" placeholder="Телефон">
+            </div>
+            <div class="form__item">
+              <textarea class="textarea" name="text" placeholder="Сообщение"></textarea>
+            </div>
+            <div class="form__item">
+              <button class="btn  btn--wide" type="submit">Отправить</button>
+            </div>
+          </form>
         </section>
       </div>
+      <!-- === / FORM === -->
       <!-- === / CONTENT === -->
       <!-- === AUTHOR === -->
       <img class="author" src="images/me.png" alt="Моё фото">
