@@ -1,0 +1,52 @@
+@media (max-width: 1000px) {
+  // === HOME:CONTENT ===
+  .author {
+    display: none;
+  }
+  // === / HOME:CONTENT ===
+}
+
+@media (max-width: 767px) {
+  // === HEADER ===
+  .header__brand {
+    font-size: 1.2rem;
+  }
+  .header__logo {
+    display: none;
+  }
+  // === / HEADER ===
+}
+
+@media (max-width: 565px) {
+  // === HEADER ===
+  .header {
+    margin-bottom: 50px;
+  }
+  .header__inner {
+    flex-direction: column;
+  }
+
+  .header__brand {
+    margin-bottom: 0.5rem;
+  }
+  // === / HEADER ===
+  // === CONTENT ===
+  .content {
+    text-align: center;
+  }
+  // === / CONTENT ===
+  // === FOOTER ===
+  .footer {
+    bottom: 30px;
+  }
+
+  .footer__contacts-box {
+    flex-direction: column;
+  }
+
+  .footer__email {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+  // === / FOOTER ===
+}

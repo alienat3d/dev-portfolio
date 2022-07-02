@@ -69,7 +69,8 @@
 
 // === CONTENT === //
 .content {
-  width: 626px;
+  width: 100%;
+  max-width: 626px;
   color: $white;
   // .content__header
   &__header {
@@ -141,6 +142,7 @@
   // .footer__contacts-box
   &__contacts-box {
     position: relative;
+    display: flex;
     font-size: 1rem;
     font-weight: 500;
     color: $white;
