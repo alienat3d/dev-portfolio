@@ -10,7 +10,9 @@
   position: relative;
   width: 100%;
   height: 100vh;
-
+  // Чтобы появлялся вертикальный скролл, если устройство меньше 770px по высоте экрана.
+  min-height: 770px;
+  overflow: hidden;
   background: $black url('../images/bg.jpg') center no-repeat;
   background-size: cover;
 }
